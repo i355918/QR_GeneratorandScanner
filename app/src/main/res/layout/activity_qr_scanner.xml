@@ -8,48 +8,45 @@
 
     <com.budiyev.android.codescanner.CodeScannerView
         android:id="@+id/ScanView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="396dp"
+        android:layout_height="512dp"
+        android:layout_marginBottom="17dp"
         app:autoFocusButtonColor="@android:color/white"
         app:autoFocusButtonVisible="true"
         app:flashButtonColor="@android:color/white"
         app:flashButtonVisible="true"
-        app:frameAspectRatioHeight="1"
-        app:frameAspectRatioWidth="1"
-        app:frameColor="@android:color/white"
+        app:frameAspectRatioHeight="0.6"
+        app:frameAspectRatioWidth="0.6"
+        app:frameColor="@color/teal_200"
         app:frameCornersRadius="0dp"
         app:frameCornersSize="50dp"
-        app:frameSize="0.75"
+        app:frameSize="0.60"
         app:frameThickness="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/scanResultText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:maskColor="#77000000">
 
-        <TextView
-            android:id="@+id/scanResultText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:maxLines="4"
-            android:minHeight="100dp"
-            android:paddingStart="10dp"
-            android:paddingTop="20dp"
-            android:paddingEnd="10dp"
-            android:paddingBottom="20dp"
-            android:text="@string/string_textview"
-            android:textAlignment="center"
-            android:textColor="#FFEB3B"
-            android:textColorHint="#00BCD4"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:typeface="normal"
-            android:verticalScrollbarPosition="defaultPosition"
-            android:visibility="visible" />
+
     </com.budiyev.android.codescanner.CodeScannerView>
+
+    <TextView
+        android:id="@+id/scanResultText"
+        android:layout_width="373dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="17dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScanView"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
