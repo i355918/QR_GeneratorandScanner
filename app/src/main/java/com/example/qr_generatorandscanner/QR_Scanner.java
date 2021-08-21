@@ -198,7 +198,7 @@ public class QR_Scanner extends AppCompatActivity {
         try {
 
             //Enter script URL Here
-            URL url = new URL("Your Script web app URL");
+            URL url = new URL("https://script.google.com/macros/s/AKfycbwQYvjeIC15HVk7ybNUcnZ5EdleV09EBeqDfkQ2Gqnhqq5JZUND/exec");
 
             JSONObject postDataParams = new JSONObject();
 
